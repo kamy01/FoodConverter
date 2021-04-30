@@ -20,7 +20,7 @@ public class FileNameExtractor {
                 System.out.println("Wrong file name. Expected menu.json/menu.xml");
             }
             count++;
-            if (count == 3) {
+            if (!validFile && count == 3) {
                 fileName = Strings.EMPTY;
                 System.out.println("Wrong file name 3 times. Exiting the program");
             }
