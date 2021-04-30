@@ -22,7 +22,6 @@ public class JsonConverter implements Converter {
         Root root = null;
         try {
             root = objectMapper.readValue(inputStream, Root.class);
-
         } catch (IOException e) {
             log.error(e.getMessage(), e);
         }
